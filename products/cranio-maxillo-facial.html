@@ -1,0 +1,2094 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cranio Maxillo Facial | PT FITRAH EKAMULIA</title>
+    <meta
+      name="description"
+      content="Cranio Maxillo Facial - Solusi implan kraniofasial titanium murni untuk fiksasi wajah yang presisi, aman, dan biokompatibel."
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- Local product CSS -->
+    <link rel="stylesheet" href="../assets/css/product.css" />
+    <style>
+      /* ==========================================================================
+           SCROLL-REVEAL ANIMATIONS
+           ========================================================================== */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      @keyframes shimmer {
+        0% {
+          background-position: -200% 0;
+        }
+        100% {
+          background-position: 200% 0;
+        }
+      }
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 20px rgba(255, 77, 77, 0.15);
+        }
+        50% {
+          box-shadow: 0 0 40px rgba(255, 77, 77, 0.3);
+        }
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+      .reveal-left {
+        opacity: 0;
+        transform: translateX(-40px);
+        animation: fadeInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+      .reveal-right {
+        opacity: 0;
+        transform: translateX(40px);
+        animation: fadeInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+      .delay-1 {
+        animation-delay: 0.1s;
+      }
+      .delay-2 {
+        animation-delay: 0.2s;
+      }
+      .delay-3 {
+        animation-delay: 0.3s;
+      }
+      .delay-4 {
+        animation-delay: 0.4s;
+      }
+      .delay-5 {
+        animation-delay: 0.5s;
+      }
+      .delay-6 {
+        animation-delay: 0.6s;
+      }
+      .delay-7 {
+        animation-delay: 0.7s;
+      }
+      .delay-8 {
+        animation-delay: 0.8s;
+      }
+
+      /* ==========================================================================
+           BREADCRUMB
+           ========================================================================== */
+      .breadcrumb-bar {
+        padding: 20px 0 0;
+        background: var(--bg-section);
+      }
+      .breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        padding: 16px 0;
+      }
+      .breadcrumb a {
+        color: var(--primary);
+        font-weight: 500;
+        transition: var(--transition-fast);
+      }
+      .breadcrumb a:hover {
+        color: var(--dark);
+      }
+      .breadcrumb .separator {
+        color: var(--text-muted);
+        font-size: 0.75rem;
+      }
+      .breadcrumb .current {
+        color: var(--dark);
+        font-weight: 600;
+      }
+
+      /* ==========================================================================
+           PRODUCT HERO SECTION
+           ========================================================================== */
+      .product-hero {
+        position: relative;
+        padding: 60px 0 80px;
+        background: linear-gradient(
+          135deg,
+          var(--bg-section) 0%,
+          hsl(0, 20%, 96%) 50%,
+          var(--bg-main) 100%
+        );
+        overflow: hidden;
+      }
+      .product-hero::before {
+        content: "";
+        position: absolute;
+        top: -200px;
+        right: -200px;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(
+          circle,
+          hsla(0, 100%, 66%, 0.06) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .product-hero::after {
+        content: "";
+        position: absolute;
+        bottom: -150px;
+        left: -150px;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(
+          circle,
+          hsla(43, 85%, 52%, 0.06) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .product-hero-grid {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .product-hero-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .product-hero-image-bg {
+        position: absolute;
+        width: 85%;
+        aspect-ratio: 1;
+        background: linear-gradient(
+          135deg,
+          var(--primary-light) 0%,
+          hsla(43, 90%, 96%, 0.6) 100%
+        );
+        border-radius: 50%;
+        z-index: 1;
+        animation: pulseGlow 4s ease-in-out infinite;
+      }
+      .product-hero-img {
+        position: relative;
+        z-index: 2;
+        max-height: 420px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.12));
+        animation: float 6s ease-in-out infinite;
+        border-radius: var(--radius-lg);
+      }
+      .product-hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .product-hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: linear-gradient(135deg, var(--primary), hsl(0, 85%, 55%));
+        color: var(--light);
+        font-family: var(--font-title);
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 8px 20px;
+        border-radius: var(--radius-round);
+        margin-bottom: 24px;
+      }
+      .product-hero-title {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 8px;
+        background: linear-gradient(
+          135deg,
+          var(--dark) 0%,
+          hsl(215, 30%, 25%) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .product-hero-subtitle {
+        font-family: var(--font-title);
+        font-size: 1.15rem;
+        font-weight: 500;
+        color: var(--text-muted);
+        margin-bottom: 24px;
+        letter-spacing: 0.5px;
+      }
+      .product-hero-desc {
+        font-size: 1.05rem;
+        color: var(--text);
+        line-height: 1.8;
+        margin-bottom: 32px;
+        max-width: 520px;
+      }
+      .product-hero-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 32px;
+      }
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 14px;
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-round);
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--text);
+        transition: var(--transition-fast);
+      }
+      .hero-tag:hover {
+        background: var(--primary-light);
+        color: var(--primary);
+        border-color: var(--primary-light);
+      }
+      .hero-tag svg {
+        width: 14px;
+        height: 14px;
+        color: var(--primary);
+      }
+      .product-hero-actions {
+        display: flex;
+        gap: 16px;
+      }
+
+      /* ==========================================================================
+           DESCRIPTION SECTION
+           ========================================================================== */
+      .description-section {
+        padding: 100px 0;
+        background: var(--light);
+      }
+      .description-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .description-text h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 24px;
+        color: var(--dark);
+      }
+      .description-text h2 span {
+        color: var(--primary);
+      }
+      .description-text p {
+        font-size: 1.02rem;
+        color: var(--text);
+        line-height: 1.85;
+        margin-bottom: 20px;
+      }
+      .description-highlights {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+      }
+      .highlight-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 16px 20px;
+        background: var(--bg-section);
+        border-radius: var(--radius-md);
+        border: 1px solid hsl(215, 15%, 93%);
+        transition: var(--transition-smooth);
+      }
+      .highlight-item:hover {
+        background: var(--primary-light);
+        border-color: hsla(0, 100%, 66%, 0.15);
+        transform: translateX(6px);
+      }
+      .highlight-icon {
+        flex-shrink: 0;
+        width: 42px;
+        height: 42px;
+        background: linear-gradient(135deg, var(--primary), hsl(0, 85%, 55%));
+        color: var(--light);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .highlight-content h4 {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 4px;
+      }
+      .highlight-content p {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        margin: 0;
+        line-height: 1.5;
+      }
+      .description-visual {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .description-visual-card {
+        position: relative;
+        background: linear-gradient(
+          135deg,
+          var(--bg-section) 0%,
+          hsl(0, 20%, 96%) 100%
+        );
+        border-radius: var(--radius-lg);
+        padding: 50px;
+        border: 1px solid hsl(215, 15%, 93%);
+        box-shadow: var(--shadow-lg);
+      }
+      .stat-badges {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .stat-badge {
+        background: var(--glass-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-md);
+        padding: 24px;
+        text-align: center;
+        transition: var(--transition-smooth);
+      }
+      .stat-badge:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-md);
+      }
+      .stat-badge .stat-num {
+        font-family: var(--font-title);
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: var(--primary);
+        display: block;
+        margin-bottom: 4px;
+      }
+      .stat-badge .stat-label {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+
+      /* ==========================================================================
+           COMPONENTS SECTION
+           ========================================================================== */
+      .components-section {
+        padding: 100px 0;
+        background: var(--bg-section);
+        position: relative;
+        overflow: hidden;
+      }
+      .components-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          hsla(0, 100%, 66%, 0.2),
+          var(--accent),
+          hsla(0, 100%, 66%, 0.2),
+          transparent
+        );
+      }
+      .components-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        margin-top: 60px;
+      }
+      @media screen and (max-width: 1024px) {
+        .components-grid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 40px;
+          margin-top: 50px;
+        }
+      }
+      .product-card-img-container {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: hsl(0, 0%, 100%);
+        border-radius: var(--radius-md);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 24px;
+        border: 1px solid hsl(215, 15%, 92%);
+        padding: 16px;
+      }
+      .product-card-img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        transition: transform var(--transition-smooth);
+      }
+      .component-card:hover .product-card-img {
+        transform: scale(1.04);
+      }
+      .component-card {
+        background: var(--light);
+        border-radius: var(--radius-lg);
+        padding: 36px;
+        border: 1px solid hsl(215, 15%, 93%);
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition-smooth);
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+      }
+      .component-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .component-card:hover::before {
+        transform: scaleX(1);
+      }
+      .component-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow-lg);
+        border-color: var(--primary-light);
+      }
+      .component-icon {
+        width: 60px;
+        height: 60px;
+        background: linear-gradient(
+          135deg,
+          var(--primary-light) 0%,
+          hsla(0, 100%, 66%, 0.12) 100%
+        );
+        color: var(--primary);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        transition: var(--transition-smooth);
+      }
+      .component-card:hover .component-icon {
+        background: linear-gradient(135deg, var(--primary), hsl(0, 85%, 55%));
+        color: var(--light);
+        transform: scale(1.05);
+      }
+      .component-num {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        font-family: var(--font-title);
+        font-size: 3rem;
+        font-weight: 800;
+        color: hsla(215, 15%, 30%, 0.04);
+        line-height: 1;
+      }
+      .component-card h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 12px;
+      }
+      .component-card p {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        line-height: 1.7;
+      }
+
+      /* ==========================================================================
+           FEATURES GRID
+           ========================================================================== */
+      .features-section {
+        padding: 100px 0;
+        background: var(--light);
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .feature-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-lg);
+        padding: 32px 28px;
+        text-align: center;
+        transition: var(--transition-smooth);
+        position: relative;
+      }
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+        border-color: var(--primary-light);
+      }
+      .feature-icon {
+        width: 56px;
+        height: 56px;
+        background: var(--primary-light);
+        color: var(--primary);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 18px;
+        transition: var(--transition-smooth);
+      }
+      .feature-card:hover .feature-icon {
+        background: var(--primary);
+        color: var(--light);
+        transform: rotateY(180deg);
+      }
+      .feature-card h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 8px;
+      }
+      .feature-card p {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ==========================================================================
+           SPECIFICATIONS TABLE
+           ========================================================================== */
+      .specs-section {
+        padding: 100px 0;
+        background: linear-gradient(
+          180deg,
+          var(--bg-section) 0%,
+          var(--light) 100%
+        );
+      }
+      .specs-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: start;
+      }
+      .specs-table-card {
+        background: var(--light);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+        border: 1px solid hsl(215, 15%, 93%);
+      }
+      .specs-table-header {
+        background: linear-gradient(
+          135deg,
+          var(--dark) 0%,
+          hsl(215, 35%, 18%) 100%
+        );
+        color: var(--light);
+        padding: 24px 32px;
+      }
+      .specs-table-header h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--light);
+      }
+      .specs-table-header p {
+        font-size: 0.85rem;
+        color: hsla(0, 0%, 100%, 0.6);
+        margin-top: 4px;
+      }
+      .specs-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .specs-table tr {
+        transition: var(--transition-fast);
+      }
+      .specs-table tr:hover {
+        background: var(--primary-light);
+      }
+      .specs-table td {
+        padding: 16px 32px;
+        font-size: 0.92rem;
+        border-bottom: 1px solid hsl(215, 15%, 95%);
+        vertical-align: top;
+      }
+      .specs-table td:first-child {
+        font-weight: 600;
+        color: var(--dark);
+        width: 40%;
+      }
+      .specs-table td:last-child {
+        color: var(--text);
+      }
+      .specs-table tr:last-child td {
+        border-bottom: none;
+      }
+
+      .specs-certifications {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .cert-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-lg);
+        padding: 28px 32px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        transition: var(--transition-smooth);
+      }
+      .cert-card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-md);
+      }
+      .cert-icon {
+        flex-shrink: 0;
+        width: 56px;
+        height: 56px;
+        background: linear-gradient(135deg, var(--accent), hsl(43, 90%, 45%));
+        color: var(--light);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cert-text h4 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 4px;
+      }
+      .cert-text p {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      .applications-card {
+        background: var(--light);
+        border-radius: var(--radius-lg);
+        padding: 32px;
+        box-shadow: var(--shadow-md);
+        border: 1px solid hsl(215, 15%, 93%);
+        margin-top: 20px;
+      }
+      .applications-card h4 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 16px;
+      }
+      .applications-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .application-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 16px;
+        background: var(--bg-section);
+        border-radius: var(--radius-sm);
+        transition: var(--transition-fast);
+      }
+      .application-item:hover {
+        background: var(--primary-light);
+        transform: translateX(4px);
+      }
+      .application-item svg {
+        flex-shrink: 0;
+        color: var(--primary);
+      }
+      .application-item span {
+        font-size: 0.92rem;
+        font-weight: 500;
+        color: var(--text);
+      }
+
+      /* ==========================================================================
+           CTA SECTION
+           ========================================================================== */
+      .cta-section {
+        padding: 100px 0;
+        background: linear-gradient(
+          135deg,
+          var(--dark) 0%,
+          hsl(215, 40%, 16%) 50%,
+          hsl(215, 35%, 20%) 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+      .cta-section::before {
+        content: "";
+        position: absolute;
+        top: -150px;
+        right: -150px;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          hsla(0, 100%, 66%, 0.1) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .cta-section::after {
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        left: -100px;
+        width: 350px;
+        height: 350px;
+        background: radial-gradient(
+          circle,
+          hsla(43, 85%, 52%, 0.08) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .cta-container {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .cta-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: var(--accent);
+        font-family: var(--font-title);
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 8px 20px;
+        border-radius: var(--radius-round);
+        margin-bottom: 24px;
+      }
+      .cta-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--light);
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+      .cta-title span {
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .cta-desc {
+        font-size: 1.05rem;
+        color: hsla(0, 0%, 100%, 0.65);
+        line-height: 1.7;
+        margin-bottom: 40px;
+      }
+      .cta-actions {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+      }
+      .btn-cta-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 36px;
+        background: linear-gradient(135deg, var(--primary), hsl(0, 85%, 55%));
+        color: var(--light);
+        font-family: var(--font-title);
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: var(--radius-round);
+        border: none;
+        cursor: pointer;
+        transition: var(--transition-smooth);
+        box-shadow: 0 8px 30px rgba(255, 77, 77, 0.3);
+      }
+      .btn-cta-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(255, 77, 77, 0.4);
+      }
+      .btn-cta-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 36px;
+        background: transparent;
+        color: var(--light);
+        font-family: var(--font-title);
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: var(--radius-round);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+        transition: var(--transition-smooth);
+      }
+      .btn-cta-secondary:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.4);
+        transform: translateY(-3px);
+      }
+
+      /* ==========================================================================
+           RESPONSIVE OVERRIDES
+           ========================================================================== */
+      @media screen and (max-width: 992px) {
+        .product-hero-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          text-align: center;
+        }
+        .product-hero-content {
+          align-items: center;
+          order: 2;
+        }
+        .product-hero-image {
+          order: 1;
+        }
+        .product-hero-title {
+          font-size: 2.5rem;
+        }
+        .product-hero-desc {
+          max-width: 600px;
+        }
+        .product-hero-tags {
+          justify-content: center;
+        }
+        .product-hero-actions {
+          justify-content: center;
+        }
+        .description-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .components-grid {
+          grid-template-columns: 1fr;
+        }
+        .features-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .specs-wrapper {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .product-hero {
+          padding: 40px 0 60px;
+        }
+        .product-hero-title {
+          font-size: 2rem;
+        }
+        .product-hero-img {
+          max-height: 280px;
+        }
+        .product-hero-actions {
+          flex-direction: column;
+          width: 100%;
+          max-width: 320px;
+        }
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+        .cta-title {
+          font-size: 1.85rem;
+        }
+        .cta-actions {
+          flex-direction: column;
+          align-items: center;
+        }
+        .description-text h2 {
+          font-size: 1.65rem;
+        }
+        .stat-badges {
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .product-hero-title {
+          font-size: 1.75rem;
+        }
+        .component-card {
+          padding: 24px;
+        }
+        .specs-table td {
+          padding: 12px 20px;
+          font-size: 0.85rem;
+        }
+        .stat-badges {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="header" id="page-header">
+      <div class="container navbar-container">
+        <a href="../index.html" class="logo-area">
+          <img
+            src="../assets/images/brand/LOGO PT FITRAH.jpeg"
+            alt="PT Fitrah Eka Mulia Logo"
+            class="logo-img"
+          />
+          <span class="company-name">PT FITRAH EKAMULIA</span>
+        </a>
+        <!-- Desktop Navigation -->
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="../index.html#produk"
+                class="nav-link dropdown-toggle"
+                id="produk-dropdown-btn"
+              >
+                Produk
+                <svg
+                  class="dropdown-icon"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9L12 15L18 9"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="surgical-instruments.html" class="dropdown-item"
+                    >Surgical Instruments</a
+                  >
+                </li>
+                <li>
+                  <a href="implant-ortopedic.html" class="dropdown-item"
+                    >Implant Orthopedic</a
+                  >
+                </li>
+                <li>
+                  <a href="endoscopy.html" class="dropdown-item"
+                    >Endoscopy Imaging Units</a
+                  >
+                </li>
+                <li>
+                  <a href="cranio-maxillo-facial.html" class="dropdown-item"
+                    >Cranio Maxillo Facial</a
+                  >
+                </li>
+                <li>
+                  <a href="digital-tourniquet-system.html" class="dropdown-item"
+                    >Digital Tourniquet System</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../index.html#tentang-kami" class="nav-link"
+                >Tentang Kami</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="../index.html#kontak"
+                class="nav-link nav-btn-contact"
+                >Hubungi Kami</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          class="mobile-toggle"
+          id="mobile-toggle"
+          aria-label="Toggle Menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../index.html">Home</a></li>
+          <li class="separator">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </li>
+          <li><a href="../index.html#produk">Produk</a></li>
+          <li class="separator">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </li>
+          <li class="current">Cranio Maxillo Facial</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ===== PRODUCT HERO SECTION ===== -->
+    <section class="product-hero" id="product-top">
+      <div class="container">
+        <div class="product-hero-grid">
+          <div class="product-hero-image reveal-left">
+            <div class="product-hero-image-bg"></div>
+            <img
+              src="../assets/images/products/cranio-maxillo-facial/Cranio-removebg.png"
+              alt="Cranio Maxillo Facial Implant System"
+              class="product-hero-img"
+            />
+          </div>
+          <div class="product-hero-content">
+            <span class="product-hero-badge reveal delay-1">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                <path d="M2 17l10 5 10-5" />
+                <path d="M2 12l10 5 10-5" />
+              </svg>
+              Cranio Maxillo Facial
+            </span>
+            <h1 class="product-hero-title reveal delay-2">
+              Cranio Maxillo Facial Implant System
+            </h1>
+            <p class="product-hero-subtitle reveal delay-3">
+              Sistem Implan Kraniofasial
+            </p>
+            <p class="product-hero-desc reveal delay-3">
+              Cranio Maxillo Facial adalah sistem implan kraniofasial yang
+              dirancang untuk fiksasi wajah dengan presisi tinggi, biokompatibilitas,
+              dan dukungan material titanium kuat untuk berbagai prosedur
+              rekonstruksi dan bedah maksilofasial.
+            </p>
+            <div class="product-hero-tags reveal delay-5">
+              <span class="hero-tag">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                CE Marked
+              </span>
+              <span class="hero-tag">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                ISO 13485
+              </span>
+              <span class="hero-tag">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                Pure Titanium
+              </span>
+              <span class="hero-tag">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                Biokompatibel
+              </span>
+            </div>
+            <div class="product-hero-actions reveal delay-6">
+              <a href="../index.html#kontak" class="btn btn-primary">
+                Hubungi Kami
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#specifications" class="btn btn-secondary"
+                >Lihat Spesifikasi</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DESCRIPTION SECTION ===== -->
+    <section class="description-section" id="description">
+      <div class="container">
+        <div class="description-grid">
+          <div class="description-text reveal-left">
+            <h2>Solusi <span>Presisi</span> untuk Implan Kraniofasial</h2>
+            <p>
+              Cranio Maxillo Facial adalah sistem implan kraniofasial yang
+              dirancang untuk memberikan fiksasi wajah dengan stabilitas
+              tinggi dan dukungan material titanium unggul untuk rekonstruksi
+              kraniofasial dan bedah maksilofasial.
+            </p>
+            <p>
+              Produk ini menawarkan kombinasi desain pre-contoured, profil
+              rendah, serta instrumen khusus yang mendukung kerja tim medis
+              dalam prosedur bedah wajah dan tulang tengkorak.
+            </p>
+            <p>
+              Produk ini menawarkan kombinasi ketajaman gambar, kompatibilitas
+              endoskop, serta kontrol intuitif yang mendukung kerja tim medis di
+              ruang operasi dan ruang prosedur endoskopi.
+            </p>
+            <div class="description-highlights">
+              <div class="highlight-item reveal delay-1">
+                <div class="highlight-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <div class="highlight-content">
+                  <h4>Biokompatibel & Aman</h4>
+                  <p>
+                    Material titanium murni yang tidak menimbulkan reaksi alergi
+                    pada tubuh manusia.
+                  </p>
+                </div>
+              </div>
+              <div class="highlight-item reveal delay-2">
+                <div class="highlight-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="3" />
+                    <path
+                      d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                    />
+                  </svg>
+                </div>
+                <div class="highlight-content">
+                  <h4>Presisi Anatomikal</h4>
+                  <p>
+                    Pre-contoured plates yang mengikuti anatomi wajah secara
+                    akurat untuk hasil operasi optimal.
+                  </p>
+                </div>
+              </div>
+              <div class="highlight-item reveal delay-3">
+                <div class="highlight-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+                  </svg>
+                </div>
+                <div class="highlight-content">
+                  <h4>Instrumen Lengkap</h4>
+                  <p>
+                    Set instrumen khusus yang komprehensif dalam satu paket
+                    untuk kemudahan pemasangan.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="description-visual reveal-right">
+            <div class="description-visual-card">
+              <div class="stat-badges">
+                <div class="stat-badge">
+                  <span class="stat-num">0.4–1.0</span>
+                  <span class="stat-label">mm Plate Thickness</span>
+                </div>
+                <div class="stat-badge">
+                  <span class="stat-num">1.5–2.0</span>
+                  <span class="stat-label">mm Screw Diameter</span>
+                </div>
+                <div class="stat-badge">
+                  <span class="stat-num">Grade 2</span>
+                  <span class="stat-label">Pure Titanium</span>
+                </div>
+                <div class="stat-badge">
+                  <span class="stat-num">Ti-6Al-4V</span>
+                  <span class="stat-label">Titanium Alloy</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPONENTS SECTION ===== -->
+    <section class="components-section" id="components">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle reveal">KATALOG PRODUK</span>
+          <h2 class="section-title reveal delay-1">
+            Katalog Komponen CMF
+          </h2>
+          <div class="title-underline reveal delay-2"></div>
+          <p class="section-desc reveal delay-3">
+            Rangkaian lengkap komponen implan dan instrumen Cranio Maxillo Facial
+            yang dirancang presisi tinggi menggunakan material titanium
+            berkualitas untuk mendukung berbagai prosedur bedah kraniofasial.
+          </p>
+        </div>
+          <!-- Card 1: Mini Plates & Micro Bone Screws 2.0mm -->
+          <article class="component-card reveal delay-4">
+            <span class="component-num"></span>
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/cranio-maxillo-facial/mini_plates_2mm.png"
+                alt="Mini Plates Titanium dan Micro Bone Screws Titanium 2.0 mm"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <h3>Mini Plates &amp; Micro Bone Screws 2.0 mm</h3>
+              <p>
+                Sistem mini plates titanium 2.0 mm lengkap dengan micro bone
+                screws. Mencakup Straight Plate, 3-Hole Plate, 4-Hole X Plate,
+                L Plate, T Plate, T/L Plate, serta L-Plate untuk berbagai
+                aplikasi fiksasi kraniofasial.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Medium Plates & Medium Bone Screws 1.6mm -->
+          <article class="component-card reveal delay-5">
+            <span class="component-num"></span>
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/cranio-maxillo-facial/medium_plates_1.6mm.png"
+                alt="Medium Plates Titanium dan Medium Bone Screws Titanium 1.6 mm"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <h3>Medium Plates &amp; Bone Screws 1.6 mm</h3>
+              <p>
+                Sistem medium plates titanium 1.6 mm untuk fiksasi tulang pada
+                area kraniofasial yang memerlukan profil lebih rendah. Tersedia
+                Straight Plate, L Plate, T Plate, dan medium bone screws
+                dengan presisi tinggi.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES SECTION ===== -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle reveal">KEUNGGULAN</span>
+          <h2 class="section-title reveal delay-1">
+            Mengapa Memilih CMF Kami?
+          </h2>
+          <div class="title-underline reveal delay-2"></div>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card reveal delay-1">
+            <div class="feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h4>Biokompatibel</h4>
+            <p>
+              Material titanium murni yang tidak menimbulkan reaksi alergi pada
+              tubuh, aman untuk implan jangka panjang.
+            </p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card reveal delay-2">
+            <div class="feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"
+                />
+                <line x1="4" y1="22" x2="4" y2="15" />
+              </svg>
+            </div>
+            <h4>Low Profile Design</h4>
+            <p>
+              Desain ultra-tipis untuk kenyamanan pasien maksimal, meminimalkan
+              risiko palpabilitas implan di bawah kulit.
+            </p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card reveal delay-3">
+            <div class="feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                />
+              </svg>
+            </div>
+            <h4>Anatomikal Pre-contoured</h4>
+            <p>
+              Pelat yang telah dibentuk mengikuti anatomi wajah, mengurangi
+              waktu operasi dan meningkatkan akurasi fiksasi.
+            </p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card reveal delay-4">
+            <div class="feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                <line x1="9" y1="9" x2="9.01" y2="9" />
+                <line x1="15" y1="9" x2="15.01" y2="9" />
+              </svg>
+            </div>
+            <h4>Color-Coded System</h4>
+            <p>
+              Sistem kode warna untuk identifikasi cepat dan mudah berbagai
+              ukuran plate dan screw selama prosedur operasi.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card reveal delay-5">
+            <div class="feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M23 4v6h-6" />
+                <path d="M1 20v-6h6" />
+                <path
+                  d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                />
+              </svg>
+            </div>
+            <h4>Sterilisasi Berulang</h4>
+            <p>
+              Instrumen dirancang untuk sterilisasi berulang tanpa degradasi
+              kualitas, menjamin keamanan dan efisiensi biaya.
+            </p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card reveal delay-6">
+            <div class="feature-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+            </div>
+            <h4>Instrumen Lengkap</h4>
+            <p>
+              Semua instrumen yang dibutuhkan tersedia dalam satu set yang
+              terorganisir, memudahkan proses pemasangan implan.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPECIFICATIONS SECTION ===== -->
+    <section class="specs-section" id="specifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle reveal">SPESIFIKASI TEKNIS</span>
+          <h2 class="section-title reveal delay-1">
+            Detail Spesifikasi Produk
+          </h2>
+          <div class="title-underline reveal delay-2"></div>
+        </div>
+
+        <div class="specs-wrapper">
+          <!-- Specs Table -->
+          <div class="reveal-left">
+            <div class="specs-table-card">
+              <div class="specs-table-header">
+                <h3>Spesifikasi Teknis CMF</h3>
+                <p>Cranio Maxillo Facial Implant System</p>
+              </div>
+              <table class="specs-table">
+                <tbody>
+                  <tr>
+                    <td>Material</td>
+                    <td>
+                      Pure Titanium Grade 2 &amp; Titanium Alloy (Ti-6Al-4V)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>System</td>
+                    <td>Low Profile &amp; Standard Profile</td>
+                  </tr>
+                  <tr>
+                    <td>Plate Thickness</td>
+                    <td>0.4mm – 1.0mm</td>
+                  </tr>
+                  <tr>
+                    <td>Screw Diameter</td>
+                    <td>1.5mm – 2.0mm</td>
+                  </tr>
+                  <tr>
+                    <td>Biokompatibilitas</td>
+                    <td>Tinggi — tidak menimbulkan reaksi alergi</td>
+                  </tr>
+                  <tr>
+                    <td>Sertifikasi</td>
+                    <td>CE Marked, ISO 13485</td>
+                  </tr>
+                  <tr>
+                    <td>Plate Design</td>
+                    <td>Anatomikal Pre-contoured</td>
+                  </tr>
+                  <tr>
+                    <td>Identifikasi</td>
+                    <td>Color-Coded System</td>
+                  </tr>
+                  <tr>
+                    <td>Sterilisasi</td>
+                    <td>Dapat disterilisasi berulang tanpa degradasi</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Certifications & Applications -->
+          <div class="reveal-right">
+            <div class="specs-certifications">
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="8" r="7" />
+                    <polyline
+                      points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+                    />
+                  </svg>
+                </div>
+                <div class="cert-text">
+                  <h4>CE Marked</h4>
+                  <p>
+                    Memenuhi standar keamanan, kesehatan, dan perlindungan
+                    lingkungan Uni Eropa untuk perangkat medis.
+                  </p>
+                </div>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <div class="cert-text">
+                  <h4>ISO 13485</h4>
+                  <p>
+                    Sistem manajemen mutu untuk perangkat medis yang memenuhi
+                    standar internasional secara konsisten.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="applications-card">
+              <h4>Aplikasi Klinis</h4>
+              <div class="applications-list">
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Bedah Kranium (Neurosurgery)</span>
+                </div>
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Bedah Maxillofasial</span>
+                </div>
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Rekonstruksi Wajah</span>
+                </div>
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Bedah Ortognatik</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section" id="kontak">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">HUBUNGI KAMI</span>
+          <h2 class="section-title">Konsultasi & Pemesanan Langsung</h2>
+          <div class="title-underline"></div>
+          <p class="section-desc">
+            Tim PT FITRAH EKAMULIA siap membantu Anda dengan informasi produk,
+            dukungan teknis, dan penawaran harga. Hubungi kami untuk solusi
+            medis yang tepat dan cepat.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card glassmorphism">
+            <h3>Hubungi PT FITRAH EKA MULIA</h3>
+            <p class="contact-intro">
+              Kunjungi kantor kami atau hubungi kami melalui media komunikasi
+              berikut.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div class="method-text">
+                  <h4>Alamat Kantor</h4>
+                  <p>
+                    Jl. Anggur No.1, Sekardangan Indah, Sekardangan, Kec.
+                    Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61215, Indonesia
+                  </p>
+                </div>
+              </div>
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </div>
+                <div class="method-text">
+                  <h4>Telepon / WhatsApp</h4>
+                  <p>081232996876</p>
+                </div>
+              </div>
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="method-text">
+                  <h4>Alamat Email</h4>
+                  <p>info@ptfitrah.com</p>
+                </div>
+              </div>
+            </div>
+            <a href="https://maps.google.com/?q=Jl.+Anggur+No.1+Sekardangan+Sidoarjo" target="_blank" rel="noopener noreferrer" class="btn-open-maps">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Buka di Google Maps
+            </a>
+          </div>
+          <div class="contact-map-inline glassmorphism">
+            <h3>Lokasi Kami</h3>
+            <div class="map-iframe-wrap">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.6324!2d112.7231134!3d-7.4665076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e4d6f0e8ce3f%3A0xc67b859397158c8e!2sJl.%20Anggur%20No.1%2C%20Sekardangan%20Indah%2C%20Sekardangan%2C%20Kec.%20Sidoarjo%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061215!5e0!3m2!1sid!2sid!4v1700000000001!5m2!1sid!2sid" width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand-side">
+          <a href="../index.html" class="footer-logo">
+            <img
+              src="../assets/images/brand/LOGO PT FITRAH.jpeg"
+              alt="PT Fitrah Eka Mulia"
+              class="footer-logo-img"
+            />
+            <span>PT FITRAH EKAMULIA</span>
+          </a>
+          <p class="footer-about-text">
+            Berdedikasi dalam menyediakan solusi kesehatan alami berkualitas
+            tinggi demi mendukung gaya hidup sehat berlandaskan khasiat fitrah
+            alamiah yang murni.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/pages/PTFITRAH-EKAMULIA/150518314998787?locale=id_ID"
+              aria-label="Facebook"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/fitrahekamulia/"
+              aria-label="Instagram"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B62318921719&text&type=phone_number&app_absent=0"
+              aria-label="WhatsApp"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-side">
+          <div class="footer-link-group">
+            <h4>Produk Kami</h4>
+            <ul>
+              <li>
+                <a href="surgical-instruments.html">Surgical Instrument</a>
+              </li>
+              <li>
+                <a href="cranio-maxillo-facial.html">Cranio Maxillo Facial</a>
+              </li>
+              <li>
+                <a href="implant-ortopedic.html">Implant Orthopedic</a>
+              </li>
+              <li>
+                <a href="digital-tourniquet-system.html"
+                  >Digital Tourniquet System</a
+                >
+              </li>
+              <li>
+                <a href="endoscopy.html">Endoscopy Imaging Units</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-link-group">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <a href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%20PT%20FITRAH%20EKAMULIA">WA: 081232996876</a>
+              </li>
+              <li>
+                <a href="mailto:info@ptfitrah.com">Email: info@ptfitrah.com</a>
+              </li>
+              <li>
+                <a href="../index.html#kontak">Alamat: Jl. Anggur No.1, Sekardangan Indah, Sidoarjo</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+          <p>Hak Cipta &copy; 2026 PT FITRAH EKAMULIA.</p>
+          <p>Designed with ❤ for Healthy Living</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+      // ── Mobile Menu Toggle ──
+      const mobileToggle = document.getElementById("mobile-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      if (mobileToggle) {
+        mobileToggle.addEventListener("click", () => {
+          mobileToggle.classList.toggle("active");
+          navMenu.classList.toggle("open");
+        });
+      }
+
+      // ── Mobile Dropdown Toggle ──
+      const dropdownToggle = document.getElementById("produk-dropdown-btn");
+      if (dropdownToggle && window.innerWidth <= 768) {
+        dropdownToggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          dropdownToggle.closest(".dropdown").classList.toggle("active");
+        });
+      }
+
+      // ── Header Scroll Effect ──
+      const header = document.getElementById("page-header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 60) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // ── Scroll Reveal with IntersectionObserver ──
+      const revealElements = document.querySelectorAll(
+        ".reveal, .reveal-left, .reveal-right",
+      );
+
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = "running";
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      revealElements.forEach((el) => {
+        el.style.animationPlayState = "paused";
+        revealObserver.observe(el);
+      });
+
+      // ── Close mobile menu on link click ──
+      document.querySelectorAll(".nav-link, .dropdown-item").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth <= 768) {
+            mobileToggle.classList.remove("active");
+            navMenu.classList.remove("open");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

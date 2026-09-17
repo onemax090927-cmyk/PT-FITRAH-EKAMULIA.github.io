@@ -1,0 +1,3014 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Endoscopy Imaging Units | PT FITRAH EKAMULIA</title>
+    <meta
+      name="description"
+      content="Endoscopy Imaging Units - Sistem endoskopi 4K & Full HD lengkap dari EMOS Technology GmbH: kamera, fluoresensi ICG/NIR, sumber cahaya, insuflator, pompa irigasi, shaver arthroscopic, monitor medis, hingga sistem perekaman."
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Base CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <!-- Local product CSS -->
+    <link rel="stylesheet" href="../assets/css/product.css" />
+    <style>
+      /* ==========================================================================
+           SCROLL-REVEAL ANIMATIONS
+           ========================================================================== */
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(40px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      @keyframes scaleIn {
+        from {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+      @keyframes pulseGlow {
+        0%,
+        100% {
+          box-shadow: 0 0 20px rgba(255, 77, 77, 0.15);
+        }
+        50% {
+          box-shadow: 0 0 40px rgba(255, 77, 77, 0.3);
+        }
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+      .reveal-left {
+        opacity: 0;
+        transform: translateX(-40px);
+        animation: fadeInLeft 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+      .reveal-right {
+        opacity: 0;
+        transform: translateX(40px);
+        animation: fadeInRight 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+      .delay-1 {
+        animation-delay: 0.1s;
+      }
+      .delay-2 {
+        animation-delay: 0.2s;
+      }
+      .delay-3 {
+        animation-delay: 0.3s;
+      }
+      .delay-4 {
+        animation-delay: 0.4s;
+      }
+      .delay-5 {
+        animation-delay: 0.5s;
+      }
+      .delay-6 {
+        animation-delay: 0.6s;
+      }
+      .delay-7 {
+        animation-delay: 0.7s;
+      }
+      .delay-8 {
+        animation-delay: 0.8s;
+      }
+      .delay-9 {
+        animation-delay: 0.9s;
+      }
+      .delay-10 {
+        animation-delay: 1s;
+      }
+
+      /* ==========================================================================
+           BREADCRUMB
+           ========================================================================== */
+      .breadcrumb-bar {
+        padding: 20px 0 0;
+        background: var(--bg-section);
+      }
+      .breadcrumb {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+        padding: 16px 0;
+      }
+      .breadcrumb a {
+        color: var(--primary);
+        font-weight: 500;
+        transition: var(--transition-fast);
+      }
+      .breadcrumb a:hover {
+        color: var(--dark);
+      }
+      .breadcrumb .separator {
+        color: var(--text-muted);
+        font-size: 0.75rem;
+      }
+      .breadcrumb .current {
+        color: var(--dark);
+        font-weight: 600;
+      }
+
+      /* ==========================================================================
+           PRODUCT HERO SECTION
+           ========================================================================== */
+      .product-hero {
+        position: relative;
+        padding: 60px 0 80px;
+        background: linear-gradient(
+          135deg,
+          var(--bg-section) 0%,
+          hsl(0, 20%, 96%) 50%,
+          var(--bg-main) 100%
+        );
+        overflow: hidden;
+      }
+      .product-hero::before {
+        content: "";
+        position: absolute;
+        top: -200px;
+        right: -200px;
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(
+          circle,
+          hsla(0, 100%, 66%, 0.06) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .product-hero::after {
+        content: "";
+        position: absolute;
+        bottom: -150px;
+        left: -150px;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(
+          circle,
+          hsla(43, 85%, 52%, 0.06) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .product-hero-grid {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .product-hero-image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .product-hero-image-bg {
+        position: absolute;
+        width: 85%;
+        aspect-ratio: 1;
+        background: linear-gradient(
+          135deg,
+          var(--primary-light) 0%,
+          hsla(43, 90%, 96%, 0.6) 100%
+        );
+        border-radius: 50%;
+        z-index: 1;
+        animation: pulseGlow 4s ease-in-out infinite;
+      }
+      .product-hero-img {
+        position: relative;
+        z-index: 2;
+        max-height: 420px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+        filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.12));
+        animation: float 6s ease-in-out infinite;
+        border-radius: var(--radius-lg);
+      }
+      /* Custom illustrated hero visual (no product photography available) */
+      .endo-hero-visual {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        max-width: 380px;
+        animation: float 6s ease-in-out infinite;
+      }
+      .endo-hero-visual svg {
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.12));
+      }
+      .product-hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .product-hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: linear-gradient(135deg, var(--primary), hsl(0, 85%, 55%));
+        color: var(--light);
+        font-family: var(--font-title);
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 8px 20px;
+        border-radius: var(--radius-round);
+        margin-bottom: 24px;
+      }
+      .product-hero-title {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1.1;
+        margin-bottom: 8px;
+        background: linear-gradient(
+          135deg,
+          var(--dark) 0%,
+          hsl(215, 30%, 25%) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .product-hero-subtitle {
+        font-family: var(--font-title);
+        font-size: 1.15rem;
+        font-weight: 500;
+        color: var(--text-muted);
+        margin-bottom: 24px;
+        letter-spacing: 0.5px;
+      }
+      .product-hero-desc {
+        font-size: 1.05rem;
+        color: var(--text);
+        line-height: 1.8;
+        margin-bottom: 32px;
+        max-width: 520px;
+      }
+      .product-hero-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 32px;
+      }
+      .hero-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 6px 14px;
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-round);
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: var(--text);
+        transition: var(--transition-fast);
+      }
+      .hero-tag:hover {
+        background: var(--primary-light);
+        color: var(--primary);
+        border-color: var(--primary-light);
+      }
+      .hero-tag svg {
+        width: 14px;
+        height: 14px;
+        color: var(--primary);
+      }
+      .product-hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 30px;
+      }
+
+      .endoscopy-showcase {
+        padding: 24px 0 80px;
+        background: linear-gradient(135deg, #f8f9fc 0%, #ffffff 100%);
+      }
+      .showcase-shell {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 32px;
+        padding: 36px;
+        border-radius: 28px;
+        border: 1px solid rgba(15, 35, 54, 0.08);
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 20px 60px rgba(15, 35, 54, 0.08);
+        backdrop-filter: blur(10px);
+      }
+      .showcase-copy h2 {
+        font-size: clamp(1.7rem, 2.3vw, 2.4rem);
+        line-height: 1.2;
+        color: var(--dark);
+        margin: 8px 0 16px;
+      }
+      .showcase-copy p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: var(--text-muted);
+        margin-bottom: 18px;
+      }
+      .showcase-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 12px;
+      }
+      .showcase-list li {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        color: var(--dark);
+        font-weight: 500;
+      }
+      .showcase-list li::before {
+        content: "✦";
+        color: var(--primary);
+        font-size: 0.95rem;
+        margin-top: 2px;
+      }
+      .showcase-highlight {
+        display: flex;
+        align-items: stretch;
+      }
+      .showcase-card {
+        width: 100%;
+        padding: 28px;
+        border-radius: 24px;
+        background: linear-gradient(135deg, var(--primary) 0%, #1f4f7d 100%);
+        color: #fff;
+        box-shadow: 0 22px 44px rgba(15, 35, 54, 0.16);
+      }
+      .showcase-card h3 {
+        font-size: 1.35rem;
+        margin-bottom: 16px;
+      }
+      .showcase-card p {
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.75;
+        margin-bottom: 20px;
+      }
+      .showcase-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+      .showcase-badges span {
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.16);
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      @media screen and (max-width: 1024px) {
+        .showcase-shell {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .showcase-shell {
+          padding: 24px;
+        }
+      }
+
+      /* ==========================================================================
+           DESCRIPTION SECTION
+           ========================================================================== */
+      .description-section {
+        padding: 100px 0;
+        background: var(--light);
+      }
+      .description-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+      .description-text h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 24px;
+        color: var(--dark);
+      }
+      .description-text h2 span {
+        color: var(--primary);
+      }
+      .description-text p {
+        font-size: 1.02rem;
+        color: var(--text);
+        line-height: 1.85;
+        margin-bottom: 20px;
+      }
+      .description-highlights {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 32px;
+      }
+      .highlight-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        padding: 16px 20px;
+        background: var(--bg-section);
+        border-radius: var(--radius-md);
+        border: 1px solid hsl(215, 15%, 93%);
+        transition: var(--transition-smooth);
+      }
+      .highlight-item:hover {
+        background: var(--primary-light);
+        border-color: hsla(0, 100%, 66%, 0.15);
+        transform: translateX(6px);
+      }
+      .highlight-icon {
+        flex-shrink: 0;
+        width: 42px;
+        height: 42px;
+        background: linear-gradient(135deg, var(--primary), hsl(0, 85%, 55%));
+        color: var(--light);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .highlight-content h4 {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 4px;
+      }
+      .highlight-content p {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        margin: 0;
+        line-height: 1.5;
+      }
+      .description-visual {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .description-visual-card {
+        position: relative;
+        background: linear-gradient(
+          135deg,
+          var(--bg-section) 0%,
+          hsl(0, 20%, 96%) 100%
+        );
+        border-radius: var(--radius-lg);
+        padding: 50px;
+        border: 1px solid hsl(215, 15%, 93%);
+        box-shadow: var(--shadow-lg);
+      }
+      .stat-badges {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .stat-badge {
+        background: var(--glass-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-md);
+        padding: 24px;
+        text-align: center;
+        transition: var(--transition-smooth);
+      }
+      .stat-badge:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-md);
+      }
+      .stat-badge .stat-num {
+        font-family: var(--font-title);
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: var(--primary);
+        display: block;
+        margin-bottom: 4px;
+      }
+      .stat-badge .stat-label {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+
+      /* ==========================================================================
+           COMPONENTS SECTION (product line catalog)
+           ========================================================================== */
+      .components-section {
+        padding: 100px 0;
+        background: var(--bg-section);
+        position: relative;
+        overflow: hidden;
+      }
+      .components-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          hsla(0, 100%, 66%, 0.2),
+          var(--accent),
+          hsla(0, 100%, 66%, 0.2),
+          transparent
+        );
+      }
+      .components-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+      }
+      @media screen and (max-width: 1024px) {
+        .components-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (max-width: 900px) {
+        .components-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      .product-card-img-container {
+        width: 100%;
+        height: 180px;
+        background: #ffffff;
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin-bottom: 18px;
+        padding: 12px;
+      }
+      .product-card-img {
+        max-width: 88%;
+        max-height: 140px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+      }
+      .product-card-badge-row {
+        display: none !important;
+      }
+      .component-card {
+        background: #ffffff;
+        border-radius: 22px;
+        padding: 24px 20px 20px 20px;
+        border: 1.5px solid #e1e7ec;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+        transition:
+          transform 0.3s ease,
+          box-shadow 0.3s ease,
+          border-color 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      .component-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+        border-color: var(--primary, #0084ff);
+      }
+      .component-card h3 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 10px;
+        line-height: 1.35;
+        text-align: left;
+      }
+      .card-accent-bar {
+        width: 100%;
+        height: 3.5px;
+        border-radius: 2px;
+        background: linear-gradient(
+          90deg,
+          #0084ff 0%,
+          #0084ff 35%,
+          #e2e8f0 35%,
+          #e2e8f0 100%
+        );
+        margin: 12px 0 10px 0;
+      }
+      .card-subtitle {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #64748b;
+        margin-bottom: 12px;
+        text-align: left;
+      }
+      .component-card p {
+        font-size: 0.88rem;
+        color: #64748b;
+        line-height: 1.55;
+        margin-bottom: 16px;
+      }
+      .product-card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+      }
+      .component-card .btn-order {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 10px 16px;
+        margin-top: auto;
+        background: linear-gradient(135deg, var(--primary), hsl(0, 85%, 55%));
+        color: #ffffff;
+        font-size: 0.9rem;
+        font-weight: 700;
+        border-radius: 12px;
+        border: none;
+        text-decoration: none;
+        transition:
+          transform 0.2s ease,
+          box-shadow 0.2s ease;
+      }
+      .component-card .btn-order:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 24px rgba(255, 77, 77, 0.25);
+      }
+
+      /* ==========================================================================
+           FEATURES GRID
+           ========================================================================== */
+      .features-section {
+        padding: 100px 0;
+        background: var(--light);
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+      .feature-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-lg);
+        padding: 32px 28px;
+        text-align: center;
+        transition: var(--transition-smooth);
+        position: relative;
+      }
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-md);
+        border-color: var(--primary-light);
+      }
+      .feature-icon {
+        width: 56px;
+        height: 56px;
+        background: var(--primary-light);
+        color: var(--primary);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 18px;
+        transition: var(--transition-smooth);
+      }
+      .feature-card:hover .feature-icon {
+        background: var(--primary);
+        color: var(--light);
+        transform: rotateY(180deg);
+      }
+      .feature-card h4 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 8px;
+      }
+      .feature-card p {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.6;
+      }
+
+      /* ==========================================================================
+           SPECIFICATIONS TABLES (multiple product lines)
+           ========================================================================== */
+      .specs-section {
+        padding: 100px 0;
+        background: linear-gradient(
+          180deg,
+          var(--bg-section) 0%,
+          var(--light) 100%
+        );
+      }
+      .specs-tabs-note {
+        text-align: center;
+        max-width: 680px;
+        margin: -20px auto 50px;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+      .specs-grid-multi {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+      .specs-table-card {
+        background: var(--light);
+        border-radius: var(--radius-lg);
+        overflow: hidden;
+        box-shadow: var(--shadow-md);
+        border: 1px solid hsl(215, 15%, 93%);
+      }
+      .specs-table-header {
+        background: linear-gradient(
+          135deg,
+          var(--dark) 0%,
+          hsl(215, 35%, 18%) 100%
+        );
+        color: var(--light);
+        padding: 22px 28px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .specs-table-header h3 {
+        font-size: 1.08rem;
+        font-weight: 700;
+        color: var(--light);
+      }
+      .specs-table-header p {
+        font-size: 0.8rem;
+        color: hsla(0, 0%, 100%, 0.6);
+        margin-top: 4px;
+      }
+      .specs-article-no {
+        flex-shrink: 0;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: var(--accent);
+        font-family: var(--font-title);
+        font-weight: 700;
+        font-size: 0.72rem;
+        letter-spacing: 0.5px;
+        padding: 5px 12px;
+        border-radius: var(--radius-round);
+        white-space: nowrap;
+      }
+      .specs-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .specs-table tr {
+        transition: var(--transition-fast);
+      }
+      .specs-table tr:hover {
+        background: var(--primary-light);
+      }
+      .specs-table td {
+        padding: 13px 28px;
+        font-size: 0.88rem;
+        border-bottom: 1px solid hsl(215, 15%, 95%);
+        vertical-align: top;
+      }
+      .specs-table td:first-child {
+        font-weight: 600;
+        color: var(--dark);
+        width: 42%;
+      }
+      .specs-table td:last-child {
+        color: var(--text);
+      }
+      .specs-table tr:last-child td {
+        border-bottom: none;
+      }
+
+      .specs-certifications {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .cert-card {
+        background: var(--glass-bg);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid var(--glass-border);
+        border-radius: var(--radius-lg);
+        padding: 28px 32px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        transition: var(--transition-smooth);
+      }
+      .cert-card:hover {
+        transform: translateY(-3px);
+        box-shadow: var(--shadow-md);
+      }
+      .cert-icon {
+        flex-shrink: 0;
+        width: 56px;
+        height: 56px;
+        background: linear-gradient(135deg, var(--accent), hsl(43, 90%, 45%));
+        color: var(--light);
+        border-radius: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cert-text h4 {
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 4px;
+      }
+      .cert-text p {
+        font-size: 0.88rem;
+        color: var(--text-muted);
+        line-height: 1.5;
+      }
+
+      .applications-card {
+        background: var(--light);
+        border-radius: var(--radius-lg);
+        padding: 32px;
+        box-shadow: var(--shadow-md);
+        border: 1px solid hsl(215, 15%, 93%);
+        margin-top: 20px;
+      }
+      .applications-card h4 {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: var(--dark);
+        margin-bottom: 16px;
+      }
+      .applications-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .application-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 16px;
+        background: var(--bg-section);
+        border-radius: var(--radius-sm);
+        transition: var(--transition-fast);
+      }
+      .application-item:hover {
+        background: var(--primary-light);
+        transform: translateX(4px);
+      }
+      .application-item svg {
+        flex-shrink: 0;
+        color: var(--primary);
+      }
+      .application-item span {
+        font-size: 0.92rem;
+        font-weight: 500;
+        color: var(--text);
+      }
+
+      /* ==========================================================================
+           CTA SECTION
+           ========================================================================== */
+      .cta-section {
+        padding: 100px 0;
+        background: linear-gradient(
+          135deg,
+          var(--dark) 0%,
+          hsl(215, 40%, 16%) 50%,
+          hsl(215, 35%, 20%) 100%
+        );
+        position: relative;
+        overflow: hidden;
+      }
+      .cta-section::before {
+        content: "";
+        position: absolute;
+        top: -150px;
+        right: -150px;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(
+          circle,
+          hsla(0, 100%, 66%, 0.1) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .cta-section::after {
+        content: "";
+        position: absolute;
+        bottom: -100px;
+        left: -100px;
+        width: 350px;
+        height: 350px;
+        background: radial-gradient(
+          circle,
+          hsla(43, 85%, 52%, 0.08) 0%,
+          transparent 70%
+        );
+        border-radius: 50%;
+        pointer-events: none;
+      }
+      .cta-container {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+      }
+      .cta-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: var(--accent);
+        font-family: var(--font-title);
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 8px 20px;
+        border-radius: var(--radius-round);
+        margin-bottom: 24px;
+      }
+      .cta-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--light);
+        margin-bottom: 20px;
+        line-height: 1.2;
+      }
+      .cta-title span {
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .cta-desc {
+        font-size: 1.05rem;
+        color: hsla(0, 0%, 100%, 0.65);
+        line-height: 1.7;
+        margin-bottom: 40px;
+      }
+      .cta-actions {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+      }
+      .btn-cta-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 36px;
+        background: linear-gradient(135deg, var(--primary), hsl(0, 85%, 55%));
+        color: var(--light);
+        font-family: var(--font-title);
+        font-size: 1rem;
+        font-weight: 700;
+        border-radius: var(--radius-round);
+        border: none;
+        cursor: pointer;
+        transition: var(--transition-smooth);
+        box-shadow: 0 8px 30px rgba(255, 77, 77, 0.3);
+      }
+      .btn-cta-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 40px rgba(255, 77, 77, 0.4);
+      }
+      .btn-cta-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 16px 36px;
+        background: transparent;
+        color: var(--light);
+        font-family: var(--font-title);
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: var(--radius-round);
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        cursor: pointer;
+        transition: var(--transition-smooth);
+      }
+      .btn-cta-secondary:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(255, 255, 255, 0.4);
+        transform: translateY(-3px);
+      }
+
+      /* ==========================================================================
+           RESPONSIVE OVERRIDES
+           ========================================================================== */
+      @media screen and (max-width: 992px) {
+        .product-hero-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+          text-align: center;
+        }
+        .product-hero-content {
+          align-items: center;
+          order: 2;
+        }
+        .product-hero-image {
+          order: 1;
+        }
+        .product-hero-title {
+          font-size: 2.5rem;
+        }
+        .product-hero-desc {
+          max-width: 600px;
+        }
+        .product-hero-tags {
+          justify-content: center;
+        }
+        .product-hero-actions {
+          justify-content: center;
+        }
+        .description-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+        .components-grid {
+          grid-template-columns: 1fr;
+        }
+        .features-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .specs-grid-multi {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .product-hero {
+          padding: 40px 0 60px;
+        }
+        .product-hero-title {
+          font-size: 2rem;
+        }
+        .product-hero-img {
+          max-height: 280px;
+        }
+        .endo-hero-visual {
+          max-width: 280px;
+        }
+        .product-hero-actions {
+          flex-direction: column;
+          width: 100%;
+          max-width: 320px;
+        }
+        .features-grid {
+          grid-template-columns: 1fr;
+        }
+        .cta-title {
+          font-size: 1.85rem;
+        }
+        .cta-actions {
+          flex-direction: column;
+          align-items: center;
+        }
+        .description-text h2 {
+          font-size: 1.65rem;
+        }
+        .stat-badges {
+          grid-template-columns: 1fr 1fr;
+          gap: 12px;
+        }
+        .specs-table-header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .product-hero-title {
+          font-size: 1.75rem;
+        }
+        .component-card {
+          padding: 24px;
+        }
+        .specs-table td {
+          padding: 12px 16px;
+          font-size: 0.82rem;
+        }
+        .stat-badges {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header class="header" id="page-header">
+      <div class="container navbar-container">
+        <a href="../index.html" class="logo-area">
+          <img
+            src="../assets/images/brand/LOGO PT FITRAH.jpeg"
+            alt="PT Fitrah Eka Mulia Logo"
+            class="logo-img"
+          />
+          <span class="company-name">PT FITRAH EKAMULIA</span>
+        </a>
+        <!-- Desktop Navigation -->
+        <nav class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                href="../index.html#produk"
+                class="nav-link dropdown-toggle"
+                id="produk-dropdown-btn"
+              >
+                Produk
+                <svg
+                  class="dropdown-icon"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 9L12 15L18 9"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="surgical-instruments.html" class="dropdown-item"
+                    >Surgical Instruments</a
+                  >
+                </li>
+                <li>
+                  <a href="implant-ortopedic.html" class="dropdown-item"
+                    >Implant Orthopedic</a
+                  >
+                </li>
+                <li>
+                  <a href="endoscopy.html" class="dropdown-item"
+                    >Endoscopy Imaging Units</a
+                  >
+                </li>
+                <li>
+                  <a href="cranio-maxillo-facial.html" class="dropdown-item"
+                    >Cranio Maxillo Facial</a
+                  >
+                </li>
+                <li>
+                  <a href="digital-tourniquet-system.html" class="dropdown-item"
+                    >Digital Tourniquet System</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="../index.html#tentang-kami" class="nav-link"
+                >Tentang Kami</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="../index.html#kontak" class="nav-link nav-btn-contact"
+                >Hubungi Kami</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- Mobile Menu Toggle Button -->
+        <button
+          class="mobile-toggle"
+          id="mobile-toggle"
+          aria-label="Toggle Menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===== BREADCRUMB ===== -->
+    <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="../index.html">Home</a></li>
+          <li class="separator">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </li>
+          <li><a href="../index.html#produk">Produk</a></li>
+          <li class="separator">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M9 18l6-6-6-6" />
+            </svg>
+          </li>
+          <li class="current">Endoscopy Imaging Units</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- ===== PRODUCT HERO SECTION ===== -->
+    <section class="product-hero" id="product-top">
+      <div class="container">
+        <div class="product-hero-grid">
+          <div class="product-hero-image reveal-left">
+            <div class="product-hero-image reveal-left">
+              <div class="product-hero-image-bg"></div>
+              <img
+                src="../assets/images/brand/endoscopy.jpeg"
+                alt="Endoscopy Imaging Units"
+                class="product-hero-img"
+              />
+            </div>
+          </div>
+          <div class="product-hero-content">
+            <span class="product-hero-badge reveal delay-1">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                />
+              </svg>
+              Endoscopy Imaging Units
+            </span>
+            <h4 class="product-hero-title reveal delay-2">
+              Endoscopy Imaging Units
+            </h4>
+            <p class="product-hero-subtitle reveal delay-3">EMOS Technology</p>
+            <p class="product-hero-desc reveal delay-4">
+              Sistem endoskopi 4K &amp; Full HD lengkap dari EMOS Technology
+              GmbH (Jerman): kamera bedah, fluoresensi ICG/NIR, sumber cahaya
+              LED, insuflator CO2, pompa irigasi, shaver arthroscopic, monitor
+              medis, hingga sistem perekaman &amp; trolley — terintegrasi dalam
+              satu endoscopy tower untuk mendukung prosedur minimal invasif
+              secara presisi dan aman.
+            </p>
+            <div class="product-hero-tags reveal delay-5">
+              <span class="hero-tag">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                Made in Germany
+              </span>
+              <span class="hero-tag">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                4K Ultra HD
+              </span>
+              <span class="hero-tag">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                ICG / NIR Fluorescence
+              </span>
+              <span class="hero-tag">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M9 12l2 2 4-4" />
+                  <circle cx="12" cy="12" r="10" />
+                </svg>
+                IEC 60601 Certified
+              </span>
+            </div>
+            <div class="product-hero-actions reveal delay-6">
+              <a href="../index.html#kontak" class="btn btn-primary">
+                Hubungi Kami
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M5 12h14" />
+                  <path d="M12 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#specifications" class="btn btn-secondary"
+                >Lihat Spesifikasi</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DESCRIPTION SECTION ===== -->
+    <section class="description-section" id="description">
+      <div class="container">
+        <div class="description-grid">
+          <div class="description-text reveal-left">
+            <h2>Endoskopi <span>Presisi</span> untuk Bedah Minimal Invasif</h2>
+            <p>
+              PT Fitrah Ekamulia bermitra dengan EMOS Technology GmbH, produsen
+              dan penyedia layanan endoskopi asal Illmensee, Jerman, yang telah
+              mengembangkan endoskop berkualitas tinggi sejak tahun 2008. EMOS
+              Technology dikenal sebagai mitra terpercaya untuk endoskop
+              fleksibel maupun rigid, lengkap dengan layanan purna jual premium
+              untuk seluruh perangkat pencitraan.
+            </p>
+            <p>
+              Katalog Endoscopy Imaging Units mencakup seluruh komponen
+              endoscopy tower: kamera 4K/FHD, sistem fluoresensi ICG/NIR, sumber
+              cahaya LED, insuflator CO2, pompa irigasi &amp; suction, shaver
+              arthroscopic, monitor medis 4K/FHD, sistem perekaman &amp;
+              archiving, hingga trolley modular — seluruhnya dirancang untuk
+              terintegrasi mulus dan mendukung alur kerja kamar operasi secara
+              efisien.
+            </p>
+            <div class="description-highlights">
+              <div class="highlight-item reveal delay-1">
+                <div class="highlight-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <div class="highlight-content">
+                  <h4>Rekayasa Jerman</h4>
+                  <p>
+                    Dirancang &amp; diproduksi di Jerman dengan standar presisi
+                    optik dan mekanik tinggi untuk keandalan jangka panjang.
+                  </p>
+                </div>
+              </div>
+              <div class="highlight-item reveal delay-2">
+                <div class="highlight-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="3" y="4" width="18" height="14" rx="2" />
+                    <path d="M8 21h8M12 18v3" />
+                  </svg>
+                </div>
+                <div class="highlight-content">
+                  <h4>Sistem Tower Modular</h4>
+                  <p>
+                    Kamera, sumber cahaya, insuflator, pompa, dan monitor dapat
+                    dikonfigurasi sesuai kebutuhan spesialisasi klinis.
+                  </p>
+                </div>
+              </div>
+              <div class="highlight-item reveal delay-3">
+                <div class="highlight-icon">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7-10-7-10-7z" />
+                    <circle cx="12" cy="12" r="3" />
+                  </svg>
+                </div>
+                <div class="highlight-content">
+                  <h4>Fluoresensi ICG / NIR</h4>
+                  <p>
+                    Pencitraan near-infrared laser-free untuk visualisasi
+                    pembuluh darah, saluran empedu, dan kelenjar getah bening
+                    secara real-time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="description-visual reveal-right">
+            <div class="description-visual-card">
+              <div class="stat-badges">
+                <div class="stat-badge">
+                  <span class="stat-num">2008</span>
+                  <span class="stat-label">Berdiri di Illmensee, Jerman</span>
+                </div>
+                <div class="stat-badge">
+                  <span class="stat-num">4K UHD</span>
+                  <span class="stat-label">3840 x 2160 Resolution</span>
+                </div>
+                <div class="stat-badge">
+                  <span class="stat-num">ICG/NIR</span>
+                  <span class="stat-label">Fluorescence Laser-Free</span>
+                </div>
+                <div class="stat-badge">
+                  <span class="stat-num">IEC 60601</span>
+                  <span class="stat-label">Medical Safety Standard</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPONENTS SECTION (Product Catalog) ===== -->
+    <section class="components-section" id="components">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle reveal">KATALOG PRODUK</span>
+          <h2 class="section-title reveal delay-1">
+            Rangkaian Endoscopy Imaging Units
+          </h2>
+          <div class="title-underline reveal delay-2"></div>
+          <p class="section-desc reveal delay-3">
+            Lima belas lini produk EMOS Technology yang membentuk satu ekosistem
+            endoskopi lengkap, dari akuisisi gambar hingga dokumentasi prosedur.
+          </p>
+        </div>
+        <div class="components-grid">
+          <!-- 1. Camera Units -->
+          <article class="component-card reveal delay-1">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/camera unit.png"
+                alt="Camera Units"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Camera Units</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Camera System</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Camera%20Units.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 2. Fluorescence Imaging ICG/NIR -->
+          <article class="component-card reveal delay-2">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/Fluorescence Imaging ICG : NIR.png"
+                alt="Fluorescence Imaging ICG / NIR"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Fluorescence Imaging ICG / NIR</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Imaging System</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20ICG%2FNIR%20Fluorescence%20Imaging.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 3. Light Sources -->
+          <article class="component-card reveal delay-3">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/light sources.png"
+                alt="Light Sources"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Light Sources</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Light System</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20LED%20Light%20Sources.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 4. Insufflators -->
+          <article class="component-card reveal delay-4">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/Infussllators.png"
+                alt="Insufflators"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Insufflators</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Insufflation System</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Insufflators.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 5. Universal Irrigation Pump -->
+          <article class="component-card reveal delay-5">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/Universal irrigation pump.png"
+                alt="Universal Irrigation Pump"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Universal Irrigation Pump</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Irrigation System</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Universal%20Irrigation%20Pump.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 6. Suction & Irrigation Pump -->
+          <article class="component-card reveal delay-6">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/Suction and irrigation pump.png"
+                alt="Suction & Irrigation Pump"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Suction &amp; Irrigation Pump</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Suction &amp; Pump System</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Suction%20%26%20Irrigation%20Pump.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 7. Arthroscopic Shaver System -->
+          <article class="component-card reveal delay-7">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/Arthorscopic Sharver Sytem.png"
+                alt="Arthroscopic Shaver System"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Arthroscopic Shaver System</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Shaver System</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Arthroscopic%20Shaver%20System.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 8. Medical Monitors -->
+          <article class="component-card reveal delay-8">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/medical image processing system monitors.png"
+                alt="Medical Monitors"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Medical Monitors</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Display System</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Medical%20Monitors.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 9. Recording & Archiving System -->
+          <article class="component-card reveal delay-9">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/recording & Archiving.png .png"
+                alt="Recording & Archiving System"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Recording &amp; Archiving System</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Data &amp; Archiving</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Recording%20%26%20Archiving%20System.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 10. Trolleys -->
+          <article class="component-card reveal delay-10">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/trolleys.png"
+                alt="Trolleys"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Trolleys</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Cart &amp; Mobile Tower</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Trolleys.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 11. Light Sources accessories -->
+          <article class="component-card reveal delay-1">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/light sources accessosries.png"
+                alt="Light Sources Accessories"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Light Sources Accessories</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Light Sources</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Camera%20Control%20Units.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+
+          <!-- 12. Endoscopy Accessories -->
+          <article class="component-card reveal delay-2">
+            <div class="product-card-img-container">
+              <img
+                src="../assets/images/products/endoscopy/Camera Accessories.png"
+                alt="Camera Accessories"
+                class="product-card-img"
+              />
+            </div>
+            <div class="product-card-content">
+              <div>
+                <h3>Camera Accessories</h3>
+                <div class="card-accent-bar"></div>
+                <div class="card-subtitle">EMOS Camera Accessories</div>
+              </div>
+              <a
+                class="btn-order"
+                href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%2C%20saya%20ingin%20menanyakan%20EMOS%20Endoscopy%20Accessories.%20Mohon%20informasi%20lebih%20lanjut."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tanya via WhatsApp
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SHOWCASE SECTION ===== -->
+    <section class="endoscopy-showcase" id="workflow">
+      <div class="container">
+        <div class="showcase-shell">
+          <div class="showcase-copy reveal-left">
+            <span class="section-subtitle">EKOSISTEM TERINTEGRASI</span>
+            <h2>
+              Visualisasi bedah, kontrol operasi, dan dokumentasi prosedur dalam
+              satu ekosistem.
+            </h2>
+            <p>
+              Sistem endoscopy tower EMOS dirancang untuk mempermudah tim bedah
+              dalam mengelola gambar, cahaya, irigasi, dan rekaman secara
+              simultan — dari awal prosedur hingga dokumentasi rumah sakit.
+            </p>
+            <ul class="showcase-list">
+              <li>
+                Integrasi kamera, light source, insufflator, dan monitor dalam
+                satu alur kerja.
+              </li>
+              <li>
+                Fluoresensi ICG/NIR untuk visualisasi pembuluh darah dan perfusi
+                jaringan real-time.
+              </li>
+              <li>
+                Rekaman 4K dan archiving yang siap terhubung dengan sistem
+                dokumentasi rumah sakit.
+              </li>
+            </ul>
+          </div>
+          <div class="showcase-highlight reveal-right">
+            <div class="showcase-card">
+              <h3>Siap untuk kamar operasi modern</h3>
+              <p>
+                Cocok untuk laparoskopi, arthroscopy, urologi, dan prosedur
+                bedah minimal invasif yang membutuhkan akurasi visual tinggi.
+              </p>
+              <div class="showcase-badges">
+                <span>4K UHD</span>
+                <span>ICG / NIR</span>
+                <span>Modular Tower</span>
+                <span>IEC 60601</span>
+              </div>
+              <a href="../index.html#kontak" class="btn btn-primary">
+                Konsultasikan Kebutuhan
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SPECIFICATIONS SECTION ===== -->
+    <section class="specs-section" id="specifications">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle reveal">SPESIFIKASI TEKNIS</span>
+          <h2 class="section-title reveal delay-1">
+            Detail Spesifikasi Produk Unggulan
+          </h2>
+          <div class="title-underline reveal delay-2"></div>
+        </div>
+        <p class="specs-tabs-note reveal delay-3">
+          Ringkasan spesifikasi teknis dari model andalan tiap lini produk
+          sesuai katalog resmi EMOS Technology GmbH. Model &amp; varian lengkap
+          tersedia atas permintaan.
+        </p>
+
+        <div class="specs-grid-multi">
+          <!-- 1. Camera Units -->
+          <div class="specs-table-card reveal-left">
+            <div class="specs-table-header">
+              <div>
+                <h3>1-CMOS 4K Camera Unit</h3>
+                <p>Camera Units | EMOS Camera System</p>
+              </div>
+              <span class="specs-article-no">CU14K</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Resolusi Sensor</td>
+                  <td>4K UHD (3840 x 2160p), Color Space BT.2020</td>
+                </tr>
+                <tr>
+                  <td>Image Sensor</td>
+                  <td>1 x 1.8" CMOS, 3 tombol kontrol pada head kamera</td>
+                </tr>
+                <tr>
+                  <td>Video Output</td>
+                  <td>1x DVI FHD, 2x HDMI 4K, 2x 12G SDI 4K</td>
+                </tr>
+                <tr>
+                  <td>Perekaman Video</td>
+                  <td>1x USB (A-Type) untuk rekam foto &amp; video 4K</td>
+                </tr>
+                <tr>
+                  <td>Antarmuka Kontrol</td>
+                  <td>
+                    Touchscreen 7", preset profil bedah, auto white balance
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tegangan Operasi</td>
+                  <td>100–240 V (95 VA), 50–60 Hz</td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>IEC 60601-1, IEC 60601-1-2, EU 2017/745 MDR (Kelas 1)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 2. Fluorescence Imaging ICG/NIR -->
+          <div class="specs-table-card reveal-right">
+            <div class="specs-table-header">
+              <div>
+                <h3>2-CMOS 4K ICG Camera Unit</h3>
+                <p>Fluorescence Imaging ICG / NIR | EMOS Imaging System</p>
+              </div>
+              <span class="specs-article-no">CU2KICG</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Resolusi Sensor</td>
+                  <td>4K (3840 x 2160p), Format 16:9</td>
+                </tr>
+                <tr>
+                  <td>Image Sensor</td>
+                  <td>2-CMOS UHD ICG, 2 x 1.8" (Channel RGB &amp; NIR)</td>
+                </tr>
+                <tr>
+                  <td>Mode Tampilan</td>
+                  <td>RGB Normal, RGB+NIR Overlay, Splitscreen Mode</td>
+                </tr>
+                <tr>
+                  <td>Video Output</td>
+                  <td>1x DVI FHD, 1x HDMI 4K, 2x 12G SDI 4K</td>
+                </tr>
+                <tr>
+                  <td>Fitur Tambahan</td>
+                  <td>
+                    Auto white balance, smoke correction, digital zoom 2.5x
+                  </td>
+                </tr>
+                <tr>
+                  <td>Tegangan Operasi</td>
+                  <td>100–240 V (50 VA), 50–60 Hz</td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>IEC 60601-1, IEC 60601-1-2, EU 2017/745 MDR (Kelas 1)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 3. Light Sources -->
+          <div class="specs-table-card reveal-left">
+            <div class="specs-table-header">
+              <div>
+                <h3>LED Light Source 4000</h3>
+                <p>Light Sources | EMOS Light System</p>
+              </div>
+              <span class="specs-article-no">LS4000LED</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Teknologi Lampu</td>
+                  <td>High-Power LED Module, CRI &ge; 90</td>
+                </tr>
+                <tr>
+                  <td>Suhu Warna</td>
+                  <td>Daylight 5600 K / 6500 K</td>
+                </tr>
+                <tr>
+                  <td>Masa Pakai LED</td>
+                  <td>&gt; 20.000 jam penggunaan efektif</td>
+                </tr>
+                <tr>
+                  <td>Konektor Cable</td>
+                  <td>STORZ Light Guide Adaptor (Universal)</td>
+                </tr>
+                <tr>
+                  <td>Kontrol Intensitas</td>
+                  <td>Touchscreen 7" &amp; Penyesuaian Elektronik Digital</td>
+                </tr>
+                <tr>
+                  <td>Dimensi &amp; Berat</td>
+                  <td>360 x 125 x 354 mm (W x H x D), 5.0 kg</td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>IEC 60601-1, IEC 60601-1-2, EU 2017/745 MDR (Kelas 1)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 4. Insufflators -->
+          <div class="specs-table-card reveal-right">
+            <div class="specs-table-header">
+              <div>
+                <h3>CO2 Insufflator with Gas Heater</h3>
+                <p>Insufflators | EMOS Insufflation System</p>
+              </div>
+              <span class="specs-article-no">INS45TH</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Gas Flow Maksimum</td>
+                  <td>45 Liter / menit (High Flow Control)</td>
+                </tr>
+                <tr>
+                  <td>Tekanan Insuflasi</td>
+                  <td>0–33 mmHg (Pengaturan Presisi Otomatis)</td>
+                </tr>
+                <tr>
+                  <td>Jenis Gas &amp; Koneksi</td>
+                  <td>CO2 Medis, Koneksi Standar UNF 7/16"</td>
+                </tr>
+                <tr>
+                  <td>Pemanas Gas</td>
+                  <td>Terintegrasi (Integrated Gas Heating Tube)</td>
+                </tr>
+                <tr>
+                  <td>Fitur Keamanan</td>
+                  <td>Alarm Tekanan Tinggi/Rendah, Mode Needle &amp; Trocar</td>
+                </tr>
+                <tr>
+                  <td>Antarmuka User</td>
+                  <td>Touchscreen Intuitif 7"</td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>
+                    IEC 60601-1, IEC 60601-1-2, EU 2017/745 MDR (Kelas 2B)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 5. Universal Irrigation Pump -->
+          <div class="specs-table-card reveal-left">
+            <div class="specs-table-header">
+              <div>
+                <h3>Universal Irrigation Pump</h3>
+                <p>Universal Irrigation Pump | EMOS Irrigation System</p>
+              </div>
+              <span class="specs-article-no">SIP</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Aplikasi Bedah</td>
+                  <td>Arthroscopy, Urology, Gynaecology/Hysteroscopy</td>
+                </tr>
+                <tr>
+                  <td>Laju Aliran (Flow)</td>
+                  <td>0.1–2.0 L/menit (0.1–0.5 L/menit untuk Gynaecology)</td>
+                </tr>
+                <tr>
+                  <td>Pengaturan Tekanan</td>
+                  <td>10–150 mmHg</td>
+                </tr>
+                <tr>
+                  <td>Sistem Kalibrasi</td>
+                  <td>Otomatis melalui fungsi LEVEL &amp; memori tekanan</td>
+                </tr>
+                <tr>
+                  <td>Dimensi &amp; Berat</td>
+                  <td>330 x 120 x 306 mm (W x H x D), 7.6 kg</td>
+                </tr>
+                <tr>
+                  <td>Tegangan Operasi</td>
+                  <td>100–240 V, 50–60 Hz</td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>IEC 60601-1, IEC 60601-1-2, CE Certified</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 6. Suction & Irrigation Pump -->
+          <div class="specs-table-card reveal-right">
+            <div class="specs-table-header">
+              <div>
+                <h3>Laparoscopic Suction &amp; Irrigation Pump</h3>
+                <p>Suction &amp; Irrigation Pump | EMOS Suction System</p>
+              </div>
+              <span class="specs-article-no">LSIP</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Aplikasi Utama</td>
+                  <td>Bedah Laparoskopi Minimal Invasif</td>
+                </tr>
+                <tr>
+                  <td>Flow Irigasi Maks.</td>
+                  <td>1.8 L/menit (&plusmn; 10%), Peristaltic Pump</td>
+                </tr>
+                <tr>
+                  <td>Flow Suction Maks.</td>
+                  <td>1.8 L/menit (&plusmn; 10%), Vacuum System</td>
+                </tr>
+                <tr>
+                  <td>Tekanan Irigasi</td>
+                  <td>Maks. 400 mmHg (&plusmn; 50 mmHg)</td>
+                </tr>
+                <tr>
+                  <td>Tekanan Suction</td>
+                  <td>-5 kPa hingga -60 kPa</td>
+                </tr>
+                <tr>
+                  <td>Fitur Keamanan</td>
+                  <td>
+                    Dua kanal independen, Alarm kesalahan selang audio/visual
+                  </td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>EN 60601-1, EN 60601-1-2, CE Certified</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 7. Arthroscopic Shaver System -->
+          <div class="specs-table-card reveal-left">
+            <div class="specs-table-header">
+              <div>
+                <h3>Arthroscopic Shaver System</h3>
+                <p>Arthroscopic Shaver System | EMOS Shaver System</p>
+              </div>
+              <span class="specs-article-no">SV100R</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Rentang Kecepatan</td>
+                  <td>Forward / Reverse 500–10.000 rpm (&plusmn; 10%)</td>
+                </tr>
+                <tr>
+                  <td>Mode Osilasi</td>
+                  <td>9 Mode Osilasi Presisi (500–3.500 rpm)</td>
+                </tr>
+                <tr>
+                  <td>Handpiece Motor</td>
+                  <td>164 mm, 325 g, Chuck Automatic / Barracuda Type</td>
+                </tr>
+                <tr>
+                  <td>Metode Sterilisasi</td>
+                  <td>Autoclavable uap hingga suhu 134&deg;C</td>
+                </tr>
+                <tr>
+                  <td>Sistem Kontrol</td>
+                  <td>
+                    Tombol terintegrasi handpiece &amp; Multi-function
+                    Footswitch
+                  </td>
+                </tr>
+                <tr>
+                  <td>Penggunaan Klinis</td>
+                  <td>Prosedur Artroskopi Lutut, Bahu, Hip, Ankle, Wrist</td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>EN 60601-1:2006+A1:2013, EN 60601-1-2:2015</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 8. Medical Monitors -->
+          <div class="specs-table-card reveal-right">
+            <div class="specs-table-header">
+              <div>
+                <h3>4K Medical Monitor 32"</h3>
+                <p>Medical Monitors | EMOS Display System</p>
+              </div>
+              <span class="specs-article-no">FM-E3230DG</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Ukuran &amp; Resolusi</td>
+                  <td>32 Inch, 4K UHD (3840 x 2160 Piksel)</td>
+                </tr>
+                <tr>
+                  <td>Tingkat Kecerahan</td>
+                  <td>850 cd/m&sup2; (High Luminance Display)</td>
+                </tr>
+                <tr>
+                  <td>Rasio Kontras</td>
+                  <td>1500:1 (Ultra-Sharp Image Detail)</td>
+                </tr>
+                <tr>
+                  <td>Teknologi Visual</td>
+                  <td>High Dynamic Range (HDR), Multi-Window (PIP/PBP)</td>
+                </tr>
+                <tr>
+                  <td>Konektivitas Video</td>
+                  <td>12G-SDI, HDMI 2.0, DisplayPort, DVI-D, RS232C</td>
+                </tr>
+                <tr>
+                  <td>Proteksi Layar</td>
+                  <td>IP35 Front Protection Glass, Anti-reflective Coating</td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>IEC 60601-1, IEC 60601-1-2, DICOM Part 14 Compliant</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 9. Recording & Archiving System -->
+          <div class="specs-table-card reveal-left">
+            <div class="specs-table-header">
+              <div>
+                <h3>4K Recording &amp; Archiving System</h3>
+                <p>
+                  Recording &amp; Archiving System | EMOS Data &amp; Archiving
+                </p>
+              </div>
+              <span class="specs-article-no">IPS740DG</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Resolusi Perekaman</td>
+                  <td>4K UHD Video &amp; Still Photo Capture</td>
+                </tr>
+                <tr>
+                  <td>Media Penyimpanan</td>
+                  <td>4 TB Internal Storage HDD/SSD Medical-Grade</td>
+                </tr>
+                <tr>
+                  <td>Format Rekaman</td>
+                  <td>MP4 (H.264/H.265), JPEG, TIFF Image Format</td>
+                </tr>
+                <tr>
+                  <td>Integrasi Rumah Sakit</td>
+                  <td>DICOM MWL (Worklist), DICOM Store, PACS &amp; HL7</td>
+                </tr>
+                <tr>
+                  <td>Antarmuka Layar</td>
+                  <td>Touchscreen 5" Panel Depan, Foot Pedal Trigger</td>
+                </tr>
+                <tr>
+                  <td>Fitur 3D</td>
+                  <td>Dukungan Perekaman &amp; Playback Video 3D</td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>IEC 60601-1, IEC 60601-1-2, CE Certified</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 10. Trolleys -->
+          <div class="specs-table-card reveal-right">
+            <div class="specs-table-header">
+              <div>
+                <h3>Endoscopy Mobile Trolley &amp; Workstation</h3>
+                <p>Trolleys | EMOS Cart &amp; Mobile Tower</p>
+              </div>
+              <span class="specs-article-no">TR-001</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Konstruksi Rangka</td>
+                  <td>Aluminium Extrusion High-Grade Powder Coated</td>
+                </tr>
+                <tr>
+                  <td>Manajemen Kabel</td>
+                  <td>Saluran Kabel Tertutup (Enclosed Cable Duct)</td>
+                </tr>
+                <tr>
+                  <td>Fasilitas Listrik</td>
+                  <td>Isolation Transformer 1500 VA + Multi Socket Strip</td>
+                </tr>
+                <tr>
+                  <td>Roda Workstation</td>
+                  <td>4 Roda Medical-Grade 125mm (2 Roda dengan Rem)</td>
+                </tr>
+                <tr>
+                  <td>Rak &amp; Laci</td>
+                  <td>4 Rak Ketinggian Adjustable + 1 Laci Terkunci</td>
+                </tr>
+                <tr>
+                  <td>Mounting Monitor</td>
+                  <td>VESA Monitor Arm Swivel &amp; Tilt Adjustment</td>
+                </tr>
+                <tr>
+                  <td>Standar Keamanan</td>
+                  <td>IEC 60601-1 Stability &amp; Load Certified</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 11. Light Sources Accessories -->
+          <div class="specs-table-card reveal-left">
+            <div class="specs-table-header">
+              <div>
+                <h3>Light Sources Accessories</h3>
+                <p>Light Sources Accessories | EMOS Light Sources</p>
+              </div>
+              <span class="specs-article-no">LS-ACC</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Jenis Aksesori</td>
+                  <td>
+                    Adaptor, Kabel Serat Optik, Pengganti Lampu &amp; Housing
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kabel Light Guide</td>
+                  <td>
+                    High-Transmission Fiber Optic &Oslash; 3.5mm / 4.8mm x 2.3m
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kompatibilitas</td>
+                  <td>Kompatibel Storz, Wolf, Olympus, &amp; ACMI Connector</td>
+                </tr>
+                <tr>
+                  <td>Adaptor Universal</td>
+                  <td>
+                    Universal Light Guide Adaptor untuk semua tipe Light Source
+                    EMOS
+                  </td>
+                </tr>
+                <tr>
+                  <td>Masa Pakai Fiber</td>
+                  <td>&gt; 3.000 jam penggunaan efektif serat optik</td>
+                </tr>
+                <tr>
+                  <td>Sterilisasi</td>
+                  <td>
+                    Autoclavable Steam 134&deg;C &amp; Chemical Disinfection
+                  </td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>ISO 13485, EU 2017/745 MDR Compliant</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- 12. Camera Accessories -->
+          <div class="specs-table-card reveal-right">
+            <div class="specs-table-header">
+              <div>
+                <h3>Camera Accessories &amp; Adapters</h3>
+                <p>Camera Accessories | EMOS Camera Accessories</p>
+              </div>
+              <span class="specs-article-no">CAM-ACC</span>
+            </div>
+            <table class="specs-table">
+              <tbody>
+                <tr>
+                  <td>Jenis Aksesori</td>
+                  <td>Camera Coupler, Scope Adaptor, Camera Head Protector</td>
+                </tr>
+                <tr>
+                  <td>Camera Coupler</td>
+                  <td>
+                    High-Resolution Optical Coupler 25–45mm, Zoom &amp; Focus
+                    Control
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kompatibilitas Scope</td>
+                  <td>
+                    Rigid &amp; Flexible Endoscope, Laparoskop, Artroskop,
+                    Sistoskop
+                  </td>
+                </tr>
+                <tr>
+                  <td>Pelindung Kamera</td>
+                  <td>
+                    Camera Head Drape Sterile Cover &amp; Silicon Protector
+                    Sleeve
+                  </td>
+                </tr>
+                <tr>
+                  <td>Kabel Kamera</td>
+                  <td>
+                    Medical-Grade Camera Cable 12G-SDI &amp; Detachable Ultra
+                    Flex
+                  </td>
+                </tr>
+                <tr>
+                  <td>Sterilisasi</td>
+                  <td>
+                    Autoclavable 134&deg;C (Coupler) &amp; Single-Use Sterile
+                    Drape
+                  </td>
+                </tr>
+                <tr>
+                  <td>Standar Medis</td>
+                  <td>IEC 60601-1, ISO 13485, EU 2017/745 MDR Compliant</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CERTIFICATIONS & APPLICATIONS ===== -->
+    <section class="specs-section" style="padding-top: 0">
+      <div class="container">
+        <div
+          class="specs-wrapper"
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+          "
+        >
+          <div class="reveal-left">
+            <div class="specs-certifications">
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="8" r="7" />
+                    <polyline
+                      points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"
+                    />
+                  </svg>
+                </div>
+                <div class="cert-text">
+                  <h4>EU 2017/745 (MDR)</h4>
+                  <p>
+                    Seluruh unit diklasifikasikan sesuai Annex VIII regulasi
+                    perangkat medis Uni Eropa, dari Kelas 1 hingga Kelas 2B.
+                  </p>
+                </div>
+              </div>
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                  </svg>
+                </div>
+                <div class="cert-text">
+                  <h4>IEC 60601-1 / -1-2</h4>
+                  <p>
+                    Memenuhi standar internasional keselamatan dasar &amp;
+                    kompatibilitas elektromagnetik perangkat elektromedik.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal-right">
+            <div class="applications-card" style="margin-top: 0">
+              <h4>Aplikasi Klinis</h4>
+              <div class="applications-list">
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Bedah Laparoskopi &amp; General Surgery</span>
+                </div>
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span
+                    >Kolesistektomi (identifikasi saluran empedu via ICG)</span
+                  >
+                </div>
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span
+                    >Bedah Kolorektal &amp; Onkologi (asesmen perfusi &amp;
+                    kelenjar getah bening)</span
+                  >
+                </div>
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Arthroscopy (lutut, bahu, hip, ankle, wrist)</span>
+                </div>
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Urologi &amp; Ginekologi/Histeroskopi</span>
+                </div>
+                <div class="application-item">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
+                  <span>Bedah Liver &amp; Ginekologi (fluoresensi ICG)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section" id="kontak">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">HUBUNGI KAMI</span>
+          <h2 class="section-title">Konsultasi & Pemesanan Langsung</h2>
+          <div class="title-underline"></div>
+          <p class="section-desc">
+            Tim PT FITRAH EKAMULIA siap membantu Anda dengan informasi produk,
+            dukungan teknis, dan penawaran harga. Hubungi kami untuk solusi
+            medis yang tepat dan cepat.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card glassmorphism">
+            <h3>Hubungi PT FITRAH EKA MULIA</h3>
+            <p class="contact-intro">
+              Kunjungi kantor kami atau hubungi kami melalui media komunikasi
+              berikut.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div class="method-text">
+                  <h4>Alamat Kantor</h4>
+                  <p>
+                    Jl. Anggur No.1, Sekardangan Indah, Sekardangan, Kec.
+                    Sidoarjo, Kabupaten Sidoarjo, Jawa Timur 61215, Indonesia
+                  </p>
+                </div>
+              </div>
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    />
+                  </svg>
+                </div>
+                <div class="method-text">
+                  <h4>Telepon / WhatsApp</h4>
+                  <p>081232996876</p>
+                </div>
+              </div>
+              <div class="contact-method-item">
+                <div class="method-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="method-text">
+                  <h4>Alamat Email</h4>
+                  <p>info@ptfitrah.com</p>
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://maps.google.com/?q=Jl.+Anggur+No.1+Sekardangan+Sidoarjo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-open-maps"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Buka di Google Maps
+            </a>
+          </div>
+          <div class="contact-map-inline glassmorphism">
+            <h3>Lokasi Kami</h3>
+            <div class="map-iframe-wrap">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.6324!2d112.7231134!3d-7.4665076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e4d6f0e8ce3f%3A0xc67b859397158c8e!2sJl.%20Anggur%20No.1%2C%20Sekardangan%20Indah%2C%20Sekardangan%2C%20Kec.%20Sidoarjo%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061215!5e0!3m2!1sid!2sid!4v1700000000001!5m2!1sid!2sid"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand-side">
+          <a href="../index.html" class="footer-logo">
+            <img
+              src="../assets/images/brand/LOGO PT FITRAH.jpeg"
+              alt="PT Fitrah Eka Mulia"
+              class="footer-logo-img"
+            />
+            <span>PT FITRAH EKAMULIA</span>
+          </a>
+          <p class="footer-about-text">
+            Berdedikasi dalam menyediakan solusi kesehatan alami berkualitas
+            tinggi demi mendukung gaya hidup sehat berlandaskan khasiat fitrah
+            alamiah yang murni.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.facebook.com/pages/PTFITRAH-EKAMULIA/150518314998787?locale=id_ID"
+              aria-label="Facebook"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.instagram.com/fitrahekamulia/"
+              aria-label="Instagram"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=%2B62318921719&text&type=phone_number&app_absent=0"
+              aria-label="WhatsApp"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-side">
+          <div class="footer-link-group">
+            <h4>Produk Kami</h4>
+            <ul>
+              <li>
+                <a href="surgical-instruments.html">Surgical Instrument</a>
+              </li>
+              <li>
+                <a href="cranio-maxillo-facial.html">Cranio Maxillo Facial</a>
+              </li>
+              <li>
+                <a href="implant-ortopedic.html">Implant Orthopedic</a>
+              </li>
+              <li>
+                <a href="digital-tourniquet-system.html"
+                  >Digital Tourniquet System</a
+                >
+              </li>
+              <li>
+                <a href="endoscopy.html">Endoscopy Imaging Units</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-link-group">
+            <h4>Contact Us</h4>
+            <ul>
+              <li>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281232996876&text=Halo%20PT%20FITRAH%20EKAMULIA"
+                  >WA: 081232996876</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@ptfitrah.com">Email: info@ptfitrah.com</a>
+              </li>
+              <li>
+                <a href="../index.html#kontak"
+                  >Alamat: Jl. Anggur No.1, Sekardangan Indah, Sidoarjo</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-container">
+          <p>Hak Cipta &copy; 2026 PT FITRAH EKAMULIA.</p>
+          <p>Designed with ❤ for Healthy Living</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+      // ── Mobile Menu Toggle ──
+      const mobileToggle = document.getElementById("mobile-toggle");
+      const navMenu = document.getElementById("nav-menu");
+
+      if (mobileToggle) {
+        mobileToggle.addEventListener("click", () => {
+          mobileToggle.classList.toggle("active");
+          navMenu.classList.toggle("open");
+        });
+      }
+
+      // ── Mobile Dropdown Toggle ──
+      const dropdownToggle = document.getElementById("produk-dropdown-btn");
+      if (dropdownToggle && window.innerWidth <= 768) {
+        dropdownToggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          dropdownToggle.closest(".dropdown").classList.toggle("active");
+        });
+      }
+
+      // ── Header Scroll Effect ──
+      const header = document.getElementById("page-header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 60) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // ── Scroll Reveal with IntersectionObserver ──
+      const revealElements = document.querySelectorAll(
+        ".reveal, .reveal-left, .reveal-right",
+      );
+
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = "running";
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      revealElements.forEach((el) => {
+        el.style.animationPlayState = "paused";
+        revealObserver.observe(el);
+      });
+
+      // ── Close mobile menu on link click ──
+      document.querySelectorAll(".nav-link, .dropdown-item").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth <= 768) {
+            mobileToggle.classList.remove("active");
+            navMenu.classList.remove("open");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
